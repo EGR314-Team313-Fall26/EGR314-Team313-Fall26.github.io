@@ -5,10 +5,10 @@ tags:
 - tag2
 ---
 <center>
-<font size="8">Project Name<br>
+<font size="8">Team Trenchless<br>
 <font size="5">Team 313<br>
 **Submission: September, 16, 2026**<br>
-Spring - 2026<br>
+Fall - 2026<br>
 <font size="4">Arizona State University<br>
 **EGR 314**<br>
 Professor Suo<br>
@@ -27,6 +27,6 @@ Professor Suo<br>
 | **Team Member**        |**Ind Datasheet Links** |
 | ---------------------- | -----------------------|
 | Tyler Dean                | [GitHub](ty-357.github.io) |
-| Okenna Anthony-Wise                | link |
+| Kenna Anthony-Wise                | link |
 | Ayush Rathi                | link |
 | Jon San Vicente                | link |
