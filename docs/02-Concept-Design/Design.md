@@ -20,3 +20,5 @@ Our primary audience is construction and maintenance companies that work in stal
 ![Initial design sketch](../sketch1.png)
 
 ## Presentation
+
+![presentation(no audio)](../presentation.pdf)
