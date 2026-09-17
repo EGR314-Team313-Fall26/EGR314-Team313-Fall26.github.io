@@ -9,11 +9,14 @@ Our primary audience is construction and maintenance companies that work in stal
 
 ## Idea Generation (Unsorted)
 
+![Unsorted concepts](../unsort.png)
 
 ## Idea Generation (Sorted)
 
+![Sorted concepts](../sort.png)
 
 ## Concept Sketch
 
+![Initial design sketch](../sketch1.png)
 
 ## Presentation
