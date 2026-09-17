@@ -21,4 +21,4 @@ Our primary audience is construction and maintenance companies that work in stal
 
 ## Presentation
 
-![presentation(no audio)](../presentation.pdf)
+[presentation(no audio)](../presentation.pdf)
