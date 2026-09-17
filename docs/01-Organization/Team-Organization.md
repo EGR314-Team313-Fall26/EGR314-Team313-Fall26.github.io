@@ -12,9 +12,7 @@ The team developed this charter during an in-class discussion about what we want
 
 ## Product Mission Statement
 
-Describe the distilled purpose, function, or reason for your product to exist. From this form a team mission statement. Google's mission statement is:
-
- > "Google's mission is to organize the world's information and make it universally accessible and useful."
+The mission of our product is to create a device capable of moving through 8–12 inch conduit and detecting inconsistencies, such as structural failures, or obstacles. The device will use an embedded system with sensors and actuators to navigate and collect data about the condition of the conduit. This data will either be stored on the device or transmitted so that it can later be reviewed by the user. The overall purpose of the product is to help identify problems within conduit after it has been installed underground This will help reduce the difficulty of locating sections that may be damaged or obstructed.
 
 ## Other Organizational Information
 
