@@ -6,9 +6,9 @@ tags:
 
 ## Team Charter
 
-> "ASU is a comprehensive public research university, measured not by whom it excludes, but by whom it includes and how they succeed; advancing research and discovery of public value; and assuming fundamental responsibility for the economic, social, cultural and overall health of the communities it serves." (ASU's Charter)
+> Our team will work together over the next three months to design and build a reliable embedded system capable of exploring conduits and identifying potential faults or collapses. Throughout the project, we will strengthen our skills in PCB design, soldering, microcontroller programming, and troubleshooting. Our goal is to produce a functional and durable prototype while gaining practical experience with the complete engineering design process. By the end of the project, we want to have a product that demonstrates our technical abilities and provides each team member with engineering experience that can be applied to future projects and careers.
 
-The team came about this team charter ....(add in your words datails on why this is your team's charter)
+The team developed this charter during an in-class discussion about what we want and expect from this class and project. Each team member shared their individual goals and what they considered a successful outcome for the project. We then identified the goals and expectations we had in common and combined them to create a team charter that will guide us throughout the semester.
 
 ## Product Mission Statement
 
