@@ -13,7 +13,7 @@ Our primary audience is construction and maintenance companies that work in stal
 ## Idea Generation (Sorted)
 
 
-##Concept Sketch
+## Concept Sketch
 
 
-#Presentation
+## Presentation
