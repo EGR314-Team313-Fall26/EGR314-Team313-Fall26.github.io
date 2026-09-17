@@ -27,6 +27,6 @@ Professor Suo<br>
 | **Team Member**        |**Ind Datasheet Links** |
 | ---------------------- | -----------------------|
 | Tyler Dean                | [GitHub](ty-357.github.io) |
-| Name #2                | link |
-| Name #3                | link |
-| Name #4                | link |
+| Okenna Anthony-Wise                | link |
+| Ayush Rathi                | link |
+| Jon San Vicente                | link |
