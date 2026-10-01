@@ -4,4 +4,4 @@ title: Block Diagram, Protocol, and Message Structure
 
 ## Header
 
-Add content!
+![Team Block Diagram](../Team_Block.drawio.png)
