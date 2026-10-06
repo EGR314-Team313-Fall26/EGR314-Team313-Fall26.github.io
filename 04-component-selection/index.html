@@ -723,6 +723,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-regulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Regulator
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motor-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor Driver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distance-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distance Sensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor #2
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -746,6 +799,181 @@
 
 <h1 id="component-selection">Component Selection</h1>
 <p>This page documents the components selected for the conduit inspection device and the reasoning behind each selection.</p>
+<h2 id="microcontroller">Microcontroller</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Image</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESP32-S3-WROOM-1-N4</td>
+<td></td>
+<td><em>Has Antenna attached. </em>plenty of GPIO * 3.3V is low power requirement.</td>
+<td>Must place carefully to not interfere with antenna.</td>
+<td><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">Link</a> Price :</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="power-regulator">Power Regulator</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Image</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LM2575D2T-3.3R4G</td>
+<td></td>
+<td>Can take from 5v to 40V input, Regulated 3.3V output, High efficiency of buck regulator, familiar with through hole version.</td>
+<td>Lower frequency of 52-Khz is outdated.</td>
+<td><a href="https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688">Link</a>  Price: $2.23</td>
+</tr>
+<tr>
+<td>LM2595S-3.3</td>
+<td></td>
+<td>Can take from 5v to 40V input,  High efficiency of buck regulator 15-Khz</td>
+<td>Lower inventory will need to keep an eye on.</td>
+<td><a href="https://www.digikey.com/en/products/detail/umw/LM2595S-3-3/24889929">Link</a> Price: $1.44</td>
+</tr>
+<tr>
+<td>MIC4721YMM-TR</td>
+<td></td>
+<td>Low price, High frequency 3.3-Mhz,1.5ma current will take care of our sensors.</td>
+<td>will have to calculate need inductor and capacitor for our required voltage, only 5.5V input.</td>
+<td><a href="https://www.digikey.com/en/products/detail/microchip-technology/MIC4721YMM-TR/1640308">Link</a> Price: $0.88</td>
+</tr>
+</tbody>
+</table>
+<h2 id="motor-driver">Motor Driver</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Image</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="distance-sensor">Distance Sensor</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Image</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sensor-2">Sensor #2</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Image</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 
