@@ -834,6 +834,8 @@
 </tr>
 </tbody>
 </table>
+<p>Selection : ESP32-S3-WROOM-1-N4
+Reason: For our project our team decided that the low power requirement of 3.3V is ideal for sensors chosen. The added antenna is also a big advantage as we will not have to create our own antenna and filtering circuit as it is already attached to the esp. This microcontroller can handle multiple i2c or spi connections as well as having a large online community. </p>
 <h2 id="power-regulator">Power Regulator</h2>
 <table>
 <thead>
@@ -869,6 +871,8 @@
 </tr>
 </tbody>
 </table>
+<p>Selection: LM2575D2T-3.3R4G
+Reason: this Buck regulator can take a wide input voltage range from 5V to 40V and steps it down to a regulated 3.3V. This is ideal the wide input range allows up to have two power rails while only needing one regulator. We can have a higher voltage coming in to power our motor and then regulate that down to power our microcontroller and other sensors. The 3.3V output is enough to power the esp32. Being a buck regulator gives us an efficiency of around 75%.</p>
 <h2 id="motor-driver">Motor Driver</h2>
 <table>
 <thead>
