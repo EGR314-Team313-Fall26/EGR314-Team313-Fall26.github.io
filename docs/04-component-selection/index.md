@@ -40,7 +40,7 @@ Reason: Able to use 12V without requiring extra thermal considerations.
 | Component | Image | Advantages | Disadvantages | Link |
 |-----------|-------|------------|---------------|------|
 |       711    |     ![711](../images/711.jpg)  |     Fast, Cheap       |      Low power  Output         |  [Link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/711/5353610)  Price: $1.95    |
-|      PKN7EB105C7   | ![PKN7EB105C7](../images/PKN7EB105C7.jpg)  |       |      Small      |     Expensive, Low Power output          |  [Link](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PKN7EB105C7/2417076?s=N4IgTCBcDaIAQAUDSA5A7AUQEIEYAMArAMJogC6AvkA)  Price: $4.43   |
+|      PKN7EB105C7   | ![PKN7EB105C7](../images/PKN7EB105C7.jpg)  |            Small      |     Expensive, Low Power output          |  [Link](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PKN7EB105C7/2417076?s=N4IgTCBcDaIAQAUDSA5A7AUQEIEYAMArAMJogC6AvkA)  Price: $4.43   |
 |    11696       |    ![11696](../images/11696.webp)   |     High Power Output       |      Large         |  [Link](https://www.digikey.com/en/products/detail/sparkfun-electronics/11696/6163657) Price: $2.75   |
 
 Selection:11696
