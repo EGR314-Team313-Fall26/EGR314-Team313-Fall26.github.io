@@ -766,11 +766,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sensor-2" class="md-nav__link">
+  <a href="#camera-and-lighting-subsystem-4" class="md-nav__link">
     <span class="md-ellipsis">
-      Sensor #2
+      Camera and Lighting (Subsystem 4)
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Camera and Lighting (Subsystem 4)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera-voltage-regulators-28v-and-12v" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camera voltage regulators (2.8V and 1.2V)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      LED lighting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -943,7 +976,8 @@ Reason: this Buck regulator can take a wide input voltage range from 5V to 40V a
 </tr>
 </tbody>
 </table>
-<h2 id="sensor-2">Sensor #2</h2>
+<h2 id="camera-and-lighting-subsystem-4">Camera and Lighting (Subsystem 4)</h2>
+<h3 id="camera">Camera</h3>
 <table>
 <thead>
 <tr>
@@ -956,28 +990,101 @@ Reason: this Buck regulator can take a wide input voltage range from 5V to 40V a
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>OV2640 2MP camera, 24-pin FPC (selected)</strong></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="ov2640.jpg" data-desc-position="bottom"><img src="ov2640.jpg" width="100"></a></td>
+<td>Best-supported camera in Espressif's esp32-camera library; outputs JPEG directly, which saves ESP32 memory; very cheap; wide-angle lens options</td>
+<td>Only 2MP; needs separate 2.8V and 1.2V supplies; fragile ribbon cable</td>
+<td><a href="INSERT-LINK">Example listing</a></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>OV5640 5MP camera, 24-pin FPC</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="ov5640.jpg" data-desc-position="bottom"><img src="ov5640.jpg" width="100"></a></td>
+<td>Higher resolution and autofocus versions available; also supported by esp32-camera</td>
+<td>Costs more; higher current; larger frames strain the ESP32's memory</td>
+<td><a href="INSERT-LINK">Example listing</a></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>OV7670 0.3MP camera</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="ov7670.jpg" data-desc-position="bottom"><img src="ov7670.jpg" width="100"></a></td>
+<td>Very cheap; common in tutorials</td>
+<td>Very low resolution; no JPEG output; uses a pin header instead of a ribbon, so it's bulky</td>
+<td><a href="INSERT-LINK">Example listing</a></td>
 </tr>
 </tbody>
 </table>
+<p><strong>Choice:</strong> OV2640. It has the best ESP32 support, outputs compressed JPEG to save memory, and gives enough resolution to spot cracks and joints in a 6-inch pipe.</p>
+<h3 id="camera-voltage-regulators-28v-and-12v">Camera voltage regulators (2.8V and 1.2V)</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Image</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>XC6206 series LDO, SOT-23 (selected)</strong></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="xc6206.jpg" data-desc-position="bottom"><img src="xc6206.jpg" width="100"></a></td>
+<td>Same part in 2.8V and 1.2V versions; tiny; very low quiescent current; used in common ESP32-CAM designs</td>
+<td>Only 200 mA max output; max input of 6V</td>
+<td><a href="https://www.digikey.com/en/products/detail/umw/XC6206P282MR/17635224">2.8V</a>, <a href="https://www.digikey.com/en/products/detail/torex-semiconductor-ltd/XC6206P122MR-G/10161703">1.2V</a></td>
+</tr>
+<tr>
+<td>AP2112K series LDO, SOT-23-5</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="ap2112.jpg" data-desc-position="bottom"><img src="ap2112.jpg" width="100"></a></td>
+<td>600 mA output; has an enable pin</td>
+<td>Needs an extra pin and part for enable; more than the camera needs</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=AP2112K-1.2">DigiKey search</a></td>
+</tr>
+<tr>
+<td>Buck converter module</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="buck.jpg" data-desc-position="bottom"><img src="buck.jpg" width="100"></a></td>
+<td>Very efficient</td>
+<td>Switching noise can show up in the video; more parts; larger</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> XC6206. The camera only draws about 100 mA, so a small, simple, quiet linear regulator is the best fit, and using the same part family for both voltages keeps the design simple.</p>
+<h3 id="led-lighting">LED lighting</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Image</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ams OSRAM DURIS E 2835 white LED (selected)</strong></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="duris-e-2835.jpg" data-desc-position="bottom"><img src="duris-e-2835.jpg" width="100"></a></td>
+<td>Rated 150 mA, so it runs cool at our ~60 mA; wide 120° beam lights the whole pipe; small SMD package</td>
+<td>Brightness changes slightly as the battery drains</td>
+<td><a href="https://www.digikey.com/en/products/detail/ams-osram-usa-inc/GW-JTLPS1-CM-JNKN-XX51-1-150-R33/13680870">DigiKey</a></td>
+</tr>
+<tr>
+<td>Cree J Series 2835 white LED</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="cree-2835.jpg" data-desc-position="bottom"><img src="cree-2835.jpg" width="100"></a></td>
+<td>Reputable brand; similar performance</td>
+<td>Costs a bit more</td>
+<td><a href="https://www.digikey.com/en/products/detail/cree-led/JB2835BWT-G-U22GA0000-N0000001/14554783">DigiKey</a></td>
+</tr>
+<tr>
+<td>XINGLIGHT 2835 white LED</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="xl-2835.jpg" data-desc-position="bottom"><img src="xl-2835.jpg" width="100"></a></td>
+<td>Very cheap</td>
+<td>Rated only 60 mA, so it would run at its limit in our circuit</td>
+<td><a href="https://www.digikey.com/en/products/detail/xinglight/XL-2835UWC-02/25673184">DigiKey</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> DURIS E 2835. Three in series from the 12V supply with one 51 Ω resistor gives even lighting at well under the LED's rating.</p>
 
 
 
