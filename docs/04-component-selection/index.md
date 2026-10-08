@@ -28,9 +28,23 @@ Reason: this Buck regulator can take a wide input voltage range from 5V to 40V a
 
 | Component | Image | Advantages | Disadvantages | Link |
 |-----------|-------|------------|---------------|------|
-|           |       |            |               |      |
-|           |       |            |               |      |
-|           |       |            |               |      |
+|  L9110S         |   ![L9110S](../images/L9110S.webp)     |     Cheap       |      Low  Voltage Rating         |  [Link](https://www.digikey.com/en/products/detail/umw/L9110S/17635270) Price: $0.61   |
+|     TB67H450FNG,EL     |   ![TB67H450FNG,EL](../images/TB67H450FNG,EL.webp)     |     High Voltage Rating       |        Expensive       |  [Link](https://www.digikey.com/en/products/detail/toshiba-semiconductor-and-storage/TB67H450FNG-EL/10130904) Price: $1.33    |
+|      DRV8220DRLR     |    ![DRV8220DRLR ](../images/DRV8220DRLR.webp)    |      Cheap, High  Voltage Rating      |        Requires Thermal Consideration       |  [Link](https://www.digikey.com/en/products/detail/texas-instruments/DRV8220DRLR/15295783)  Price: $0.90    |
+
+Selection: TB67H450FNG,EL
+Reason: Able to use 12V without requiring extra thermal considerations.
+
+## Motor 
+
+| Component | Image | Advantages | Disadvantages | Link |
+|-----------|-------|------------|---------------|------|
+|       711    |     ![711](../images/711.jpg)  |     Fast, Cheap       |      Low power  Output         |  [Link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/711/5353610)  Price: $1.95    |
+|      PKN7EB105C7   ![PKN7EB105C7](../images/PKN7EB105C7.jpg)  |       |      Small      |     Expensive, Low Power output          |  [Link](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PKN7EB105C7/2417076?s=N4IgTCBcDaIAQAUDSA5A7AUQEIEYAMArAMJogC6AvkA)  Price: $4.43   |
+|    11696       |    ![11696](../images/11696.webp)   |     High Power Output       |      Large         |  [Link](https://www.digikey.com/en/products/detail/sparkfun-electronics/11696/6163657) Price: $2.75   |
+
+Selection:11696
+Reason: High output is ideal for locomotion.
 
 ## Distance Sensor 
 
